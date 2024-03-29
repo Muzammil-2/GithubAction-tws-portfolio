@@ -20,7 +20,6 @@ jobs:
         region: us-central1
     - name: Deploy to GCS
       run: |
-         gsutil -m cp -r ./* gs://githubaction/
+         gsutil -m cp -r . gs://githubaction/
 
-    - name: Deploy static site to S3 bucket
-      run: aws s3 sync . s3://tws-portfolio --delete
+    
