@@ -16,7 +16,7 @@ jobs:
       with:
         version: 'latest'
         project_id: ${{ secrets.GCP_PROJECT_ID }}
-        service_acount_key: ${{ secrets.GCP_SECRET_SA_KEY }}
+        service_account_key: ${{ secrets.GCP_SECRET_SA_KEY }}
         region: us-central1
     - name: Deploy to GCS
       run: |
